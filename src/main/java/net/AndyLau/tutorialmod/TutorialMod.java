@@ -1,6 +1,7 @@
 package net.AndyLau.tutorialmod;
 
 import com.mojang.logging.LogUtils;
+import net.AndyLau.tutorialmod.block.ModBlocks;
 import net.AndyLau.tutorialmod.item.ModItems;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.common.MinecraftForge;
@@ -27,6 +28,7 @@ public class TutorialMod
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
 
         ModItems.register(modEventBus);
+        ModBlocks.register(modEventBus);
 
         modEventBus.addListener(this::commonSetup);
 
