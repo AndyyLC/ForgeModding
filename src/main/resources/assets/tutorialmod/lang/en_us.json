@@ -1,6 +1,7 @@
 {
   "item.tutorialmod.testitem": "Test Item",
   "block.tutorialmod.zircon_block": "Zircon Block",
+  "item.tutorialmod.moditem": "Mod Item",
 
   "itemGroup.tutorialtab": "Test Tab"
 }
