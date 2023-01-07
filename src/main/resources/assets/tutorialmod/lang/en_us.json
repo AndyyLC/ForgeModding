@@ -1,7 +1,10 @@
 {
   "item.tutorialmod.testitem": "Test Item",
-  "block.tutorialmod.zircon_block": "Zircon Block",
+
   "item.tutorialmod.moditem": "Mod Item",
+
+  "block.tutorialmod.zircon_block": "Zircon Block",
+  "block.tutorialmod.speed_block": "Speed Block",
 
   "itemGroup.tutorialtab": "Test Tab"
 }
