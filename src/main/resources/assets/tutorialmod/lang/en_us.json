@@ -5,6 +5,7 @@
 
   "block.tutorialmod.zircon_block": "Zircon Block",
   "block.tutorialmod.speed_block": "Speed Block",
+  "block.tutorialmod.lamp_block": "Lamp Block",
 
   "itemGroup.tutorialtab": "Test Tab"
 }
