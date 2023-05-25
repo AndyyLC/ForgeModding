@@ -1,6 +1,7 @@
 package net.AndyLau.tutorialmod.block;
 
 import net.AndyLau.tutorialmod.TutorialMod;
+import net.AndyLau.tutorialmod.block.custom.Crop_Block;
 import net.AndyLau.tutorialmod.block.custom.Lamp_Block;
 import net.AndyLau.tutorialmod.block.custom.Speed_Block;
 import net.AndyLau.tutorialmod.item.ModItems;
@@ -10,6 +11,7 @@ import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.CreativeModeTab;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraft.world.level.material.Material;
@@ -37,6 +39,9 @@ public class ModBlocks {
             () -> new Lamp_Block(BlockBehaviour.Properties.of(Material.GLASS).strength(6f).requiresCorrectToolForDrops()
                     .lightLevel(state -> state.getValue(Lamp_Block.LIT) ? 15 : 0)),
             ModeCreativeModTab.TUTORIAL_TAB);
+
+    public static final RegistryObject<Block> CROP_BLOCK = BLOCKS.register("crop_block",
+            () -> new Crop_Block(BlockBehaviour.Properties.copy(Blocks.CARROTS)));
 
     private static <T extends Block>RegistryObject<T> registerBlock(String name, Supplier<T> block, CreativeModeTab tab) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);
