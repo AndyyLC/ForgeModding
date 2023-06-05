@@ -3,9 +3,13 @@
 
   "item.tutorialmod.moditem": "Mod Item",
 
+  "item.tutorialmod.crop": "Crop",
+  "item.tutorialmod.crop_seeds": "Crop seeds",
+
   "block.tutorialmod.zircon_block": "Zircon Block",
   "block.tutorialmod.speed_block": "Speed Block",
   "block.tutorialmod.lamp_block": "Lamp Block",
+  "block.tutorialmod.crop_block": "Crop Block",
 
   "itemGroup.tutorialtab": "Test Tab"
 }
