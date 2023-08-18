@@ -3,6 +3,7 @@ package net.AndyLau.tutorialmod;
 import com.mojang.logging.LogUtils;
 import net.AndyLau.tutorialmod.block.ModBlocks;
 import net.AndyLau.tutorialmod.item.ModItems;
+import net.AndyLau.tutorialmod.villager.ModVillagers;
 import net.minecraft.client.renderer.ItemBlockRenderTypes;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.world.level.block.Blocks;
@@ -39,6 +40,10 @@ public class TutorialMod
 
     private void commonSetup(final FMLCommonSetupEvent event)
     {
+
+        event.enqueueWork(() -> {
+            ModVillagers.registerPOIs();
+        });
         // Some common setup code
         LOGGER.info("HELLO FROM COMMON SETUP");
         LOGGER.info("DIRT BLOCK >> {}", ForgeRegistries.BLOCKS.getKey(Blocks.DIRT));
